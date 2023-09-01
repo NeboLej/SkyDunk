@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFA34AB678B122CA8AAAAA60 /* Pods_SkyDunk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2112891A753BBBCB3A299D6 /* Pods_SkyDunk.framework */; };
+		FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BD2AA217250083007E /* AppDelegate.swift */; };
+		FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BF2AA217250083007E /* SceneDelegate.swift */; };
+		FAEB00C22AA217250083007E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00C12AA217250083007E /* MainController.swift */; };
+		FAEB00C72AA217270083007E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEB00C62AA217270083007E /* Assets.xcassets */; };
+		FAEB00CA2AA217270083007E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB00C82AA217270083007E /* LaunchScreen.storyboard */; };
+		FAEB00D52AA21D180083007E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00D42AA21D180083007E /* MainView.swift */; };
+		FAEB00D82AA21D350083007E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00D72AA21D350083007E /* BaseView.swift */; };
+		FAEB00DA2AA21D480083007E /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00D92AA21D480083007E /* BaseController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2193E52BBACC19A227CF1357 /* Pods-SkyDunk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyDunk.debug.xcconfig"; path = "Target Support Files/Pods-SkyDunk/Pods-SkyDunk.debug.xcconfig"; sourceTree = "<group>"; };
+		2BF9C6709523B62FA36A8ACB /* Pods-SkyDunk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyDunk.release.xcconfig"; path = "Target Support Files/Pods-SkyDunk/Pods-SkyDunk.release.xcconfig"; sourceTree = "<group>"; };
+		E2112891A753BBBCB3A299D6 /* Pods_SkyDunk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyDunk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEB00BA2AA217250083007E /* SkyDunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyDunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEB00BD2AA217250083007E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAEB00BF2AA217250083007E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAEB00C12AA217250083007E /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		FAEB00C62AA217270083007E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAEB00C92AA217270083007E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAEB00CB2AA217270083007E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEB00D42AA21D180083007E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FAEB00D72AA21D350083007E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		FAEB00D92AA21D480083007E /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAEB00B72AA217250083007E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA34AB678B122CA8AAAAA60 /* Pods_SkyDunk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E841408C19B6F7F127EA8AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2112891A753BBBCB3A299D6 /* Pods_SkyDunk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A144E26DB92B56EED22F91FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2193E52BBACC19A227CF1357 /* Pods-SkyDunk.debug.xcconfig */,
+				2BF9C6709523B62FA36A8ACB /* Pods-SkyDunk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FAEB00B12AA217250083007E = {
+			isa = PBXGroup;
+			children = (
+				FAEB00BC2AA217250083007E /* SkyDunk */,
+				FAEB00BB2AA217250083007E /* Products */,
+				A144E26DB92B56EED22F91FF /* Pods */,
+				4E841408C19B6F7F127EA8AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAEB00BB2AA217250083007E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB00BA2AA217250083007E /* SkyDunk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAEB00BC2AA217250083007E /* SkyDunk */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB00D22AA2194E0083007E /* UI */,
+				FAEB00D12AA219200083007E /* System */,
+				FAEB00C62AA217270083007E /* Assets.xcassets */,
+				FAEB00C82AA217270083007E /* LaunchScreen.storyboard */,
+			);
+			path = SkyDunk;
+			sourceTree = "<group>";
+		};
+		FAEB00D12AA219200083007E /* System */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB00BD2AA217250083007E /* AppDelegate.swift */,
+				FAEB00BF2AA217250083007E /* SceneDelegate.swift */,
+				FAEB00CB2AA217270083007E /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		FAEB00D22AA2194E0083007E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB00D32AA219630083007E /* Main */,
+				FAEB00D62AA21D1D0083007E /* Base */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FAEB00D32AA219630083007E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB00C12AA217250083007E /* MainController.swift */,
+				FAEB00D42AA21D180083007E /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAEB00D62AA21D1D0083007E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB00D72AA21D350083007E /* BaseView.swift */,
+				FAEB00D92AA21D480083007E /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAEB00B92AA217250083007E /* SkyDunk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEB00CE2AA217270083007E /* Build configuration list for PBXNativeTarget "SkyDunk" */;
+			buildPhases = (
+				E10540140AEB9C6AF03D2E28 /* [CP] Check Pods Manifest.lock */,
+				FAEB00B62AA217250083007E /* Sources */,
+				FAEB00B72AA217250083007E /* Frameworks */,
+				FAEB00B82AA217250083007E /* Resources */,
+				7A26D82373B32B03BA0E7981 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyDunk;
+			productName = SkyDunk;
+			productReference = FAEB00BA2AA217250083007E /* SkyDunk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAEB00B22AA217250083007E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FAEB00B92AA217250083007E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = FAEB00B52AA217250083007E /* Build configuration list for PBXProject "SkyDunk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAEB00B12AA217250083007E;
+			productRefGroup = FAEB00BB2AA217250083007E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAEB00B92AA217250083007E /* SkyDunk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAEB00B82AA217250083007E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEB00CA2AA217270083007E /* LaunchScreen.storyboard in Resources */,
+				FAEB00C72AA217270083007E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A26D82373B32B03BA0E7981 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyDunk/Pods-SkyDunk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyDunk/Pods-SkyDunk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyDunk/Pods-SkyDunk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10540140AEB9C6AF03D2E28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyDunk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAEB00B62AA217250083007E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEB00C22AA217250083007E /* MainController.swift in Sources */,
+				FAEB00D52AA21D180083007E /* MainView.swift in Sources */,
+				FAEB00D82AA21D350083007E /* BaseView.swift in Sources */,
+				FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */,
+				FAEB00DA2AA21D480083007E /* BaseController.swift in Sources */,
+				FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAEB00C82AA217270083007E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEB00C92AA217270083007E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAEB00CC2AA217270083007E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAEB00CD2AA217270083007E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAEB00CF2AA217270083007E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2193E52BBACC19A227CF1357 /* Pods-SkyDunk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 955DP87LHM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkyDunk/System/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.SkyDunk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAEB00D02AA217270083007E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF9C6709523B62FA36A8ACB /* Pods-SkyDunk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 955DP87LHM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkyDunk/System/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.SkyDunk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAEB00B52AA217250083007E /* Build configuration list for PBXProject "SkyDunk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEB00CC2AA217270083007E /* Debug */,
+				FAEB00CD2AA217270083007E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEB00CE2AA217270083007E /* Build configuration list for PBXNativeTarget "SkyDunk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEB00CF2AA217270083007E /* Debug */,
+				FAEB00D02AA217270083007E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAEB00B22AA217250083007E /* Project object */;
+}

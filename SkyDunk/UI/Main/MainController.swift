@@ -7,11 +7,21 @@
 
 import UIKit
 
-class MainController: BaseController<MainView> {
-
+final class MainController: BaseController<MainView> {
+    
+    var vm: MainViewModel = MainViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+//        mainView.nameLab.text = vm.name
+        
+        vm.name.bind { it in
+            DispatchQueue.main.async {
+                self.mainView.nameLab.text = it
+            }
+        }
     }
 }
 

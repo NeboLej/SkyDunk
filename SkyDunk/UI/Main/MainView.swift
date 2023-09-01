@@ -10,7 +10,7 @@ import SnapKit
 
 class MainView: BaseView {
     
-    private lazy var nameLab: UILabel = {
+    lazy var nameLab: UILabel = {
         var label = UILabel()
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
@@ -26,6 +26,6 @@ class MainView: BaseView {
         nameLab.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
-
     }
+    
 }

@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CFA34AB678B122CA8AAAAA60 /* Pods_SkyDunk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2112891A753BBBCB3A299D6 /* Pods_SkyDunk.framework */; };
+		FA52A6D02AA261E8005CF68E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6CF2AA261E8005CF68E /* MainViewModel.swift */; };
+		FA52A6D22AA2621E005CF68E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6D12AA2621E005CF68E /* BaseViewModel.swift */; };
+		FA52A6D52AA2725E005CF68E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6D42AA2725E005CF68E /* Observable.swift */; };
+		FA52A6D72AA4AB32005CF68E /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6D62AA4AB32005CF68E /* GameService.swift */; };
+		FA52A6DA2AA4AE41005CF68E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6D92AA4AE41005CF68E /* Game.swift */; };
+		FA52A6DD2AA4AE90005CF68E /* GameDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6DC2AA4AE90005CF68E /* GameDTO.swift */; };
+		FA52A6DF2AA4B078005CF68E /* TeamDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6DE2AA4B078005CF68E /* TeamDTO.swift */; };
+		FA52A6E22AA4B139005CF68E /* ConferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E12AA4B139005CF68E /* ConferenceType.swift */; };
+		FA52A6E42AA4B56D005CF68E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E32AA4B56D005CF68E /* Team.swift */; };
+		FA52A6E62AA4B6CA005CF68E /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E52AA4B6CA005CF68E /* GameRepository.swift */; };
 		FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BD2AA217250083007E /* AppDelegate.swift */; };
 		FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BF2AA217250083007E /* SceneDelegate.swift */; };
 		FAEB00C22AA217250083007E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00C12AA217250083007E /* MainController.swift */; };
@@ -22,6 +32,16 @@
 		2193E52BBACC19A227CF1357 /* Pods-SkyDunk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyDunk.debug.xcconfig"; path = "Target Support Files/Pods-SkyDunk/Pods-SkyDunk.debug.xcconfig"; sourceTree = "<group>"; };
 		2BF9C6709523B62FA36A8ACB /* Pods-SkyDunk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyDunk.release.xcconfig"; path = "Target Support Files/Pods-SkyDunk/Pods-SkyDunk.release.xcconfig"; sourceTree = "<group>"; };
 		E2112891A753BBBCB3A299D6 /* Pods_SkyDunk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyDunk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA52A6CF2AA261E8005CF68E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FA52A6D12AA2621E005CF68E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		FA52A6D42AA2725E005CF68E /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		FA52A6D62AA4AB32005CF68E /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		FA52A6D92AA4AE41005CF68E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FA52A6DC2AA4AE90005CF68E /* GameDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDTO.swift; sourceTree = "<group>"; };
+		FA52A6DE2AA4B078005CF68E /* TeamDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDTO.swift; sourceTree = "<group>"; };
+		FA52A6E12AA4B139005CF68E /* ConferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceType.swift; sourceTree = "<group>"; };
+		FA52A6E32AA4B56D005CF68E /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		FA52A6E52AA4B6CA005CF68E /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
 		FAEB00BA2AA217250083007E /* SkyDunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyDunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB00BD2AA217250083007E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEB00BF2AA217250083007E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +83,51 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FA52A6CC2AA2590B005CF68E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA52A6E02AA4B106005CF68E /* Constants */,
+				FA52A6D82AA4AE1F005CF68E /* Models */,
+				FA52A6D62AA4AB32005CF68E /* GameService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA52A6CD2AA25925005CF68E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FA52A6DB2AA4AE76005CF68E /* DTOs */,
+				FA52A6E52AA4B6CA005CF68E /* GameRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FA52A6D82AA4AE1F005CF68E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA52A6D92AA4AE41005CF68E /* Game.swift */,
+				FA52A6E32AA4B56D005CF68E /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA52A6DB2AA4AE76005CF68E /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				FA52A6DC2AA4AE90005CF68E /* GameDTO.swift */,
+				FA52A6DE2AA4B078005CF68E /* TeamDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		FA52A6E02AA4B106005CF68E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA52A6E12AA4B139005CF68E /* ConferenceType.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		FAEB00B12AA217250083007E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				FAEB00D22AA2194E0083007E /* UI */,
+				FA52A6CC2AA2590B005CF68E /* Services */,
+				FA52A6CD2AA25925005CF68E /* Repositories */,
 				FAEB00D12AA219200083007E /* System */,
 				FAEB00C62AA217270083007E /* Assets.xcassets */,
 				FAEB00C82AA217270083007E /* LaunchScreen.storyboard */,
@@ -95,6 +162,7 @@
 		FAEB00D12AA219200083007E /* System */ = {
 			isa = PBXGroup;
 			children = (
+				FA52A6D42AA2725E005CF68E /* Observable.swift */,
 				FAEB00BD2AA217250083007E /* AppDelegate.swift */,
 				FAEB00BF2AA217250083007E /* SceneDelegate.swift */,
 				FAEB00CB2AA217270083007E /* Info.plist */,
@@ -114,6 +182,7 @@
 		FAEB00D32AA219630083007E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FA52A6CF2AA261E8005CF68E /* MainViewModel.swift */,
 				FAEB00C12AA217250083007E /* MainController.swift */,
 				FAEB00D42AA21D180083007E /* MainView.swift */,
 			);
@@ -125,6 +194,7 @@
 			children = (
 				FAEB00D72AA21D350083007E /* BaseView.swift */,
 				FAEB00D92AA21D480083007E /* BaseController.swift */,
+				FA52A6D12AA2621E005CF68E /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -243,10 +313,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA52A6D02AA261E8005CF68E /* MainViewModel.swift in Sources */,
+				FA52A6D52AA2725E005CF68E /* Observable.swift in Sources */,
 				FAEB00C22AA217250083007E /* MainController.swift in Sources */,
+				FA52A6E42AA4B56D005CF68E /* Team.swift in Sources */,
 				FAEB00D52AA21D180083007E /* MainView.swift in Sources */,
 				FAEB00D82AA21D350083007E /* BaseView.swift in Sources */,
+				FA52A6DD2AA4AE90005CF68E /* GameDTO.swift in Sources */,
 				FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */,
+				FA52A6E22AA4B139005CF68E /* ConferenceType.swift in Sources */,
+				FA52A6E62AA4B6CA005CF68E /* GameRepository.swift in Sources */,
+				FA52A6DF2AA4B078005CF68E /* TeamDTO.swift in Sources */,
+				FA52A6DA2AA4AE41005CF68E /* Game.swift in Sources */,
+				FA52A6D22AA2621E005CF68E /* BaseViewModel.swift in Sources */,
+				FA52A6D72AA4AB32005CF68E /* GameService.swift in Sources */,
 				FAEB00DA2AA21D480083007E /* BaseController.swift in Sources */,
 				FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */,
 			);

@@ -18,6 +18,9 @@
 		FA52A6E22AA4B139005CF68E /* ConferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E12AA4B139005CF68E /* ConferenceType.swift */; };
 		FA52A6E42AA4B56D005CF68E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E32AA4B56D005CF68E /* Team.swift */; };
 		FA52A6E62AA4B6CA005CF68E /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E52AA4B6CA005CF68E /* GameRepository.swift */; };
+		FA52A6E82AA522BC005CF68E /* LastGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E72AA522BC005CF68E /* LastGameView.swift */; };
+		FA52A6EB2AA53331005CF68E /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6EA2AA53331005CF68E /* Date+.swift */; };
+		FA52A6ED2AA534C0005CF68E /* Layer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6EC2AA534C0005CF68E /* Layer+.swift */; };
 		FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BD2AA217250083007E /* AppDelegate.swift */; };
 		FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BF2AA217250083007E /* SceneDelegate.swift */; };
 		FAEB00C22AA217250083007E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00C12AA217250083007E /* MainController.swift */; };
@@ -42,6 +45,9 @@
 		FA52A6E12AA4B139005CF68E /* ConferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceType.swift; sourceTree = "<group>"; };
 		FA52A6E32AA4B56D005CF68E /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		FA52A6E52AA4B6CA005CF68E /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
+		FA52A6E72AA522BC005CF68E /* LastGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastGameView.swift; sourceTree = "<group>"; };
+		FA52A6EA2AA53331005CF68E /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		FA52A6EC2AA534C0005CF68E /* Layer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layer+.swift"; sourceTree = "<group>"; };
 		FAEB00BA2AA217250083007E /* SkyDunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyDunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB00BD2AA217250083007E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEB00BF2AA217250083007E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		FA52A6E92AA5331D005CF68E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA52A6EA2AA53331005CF68E /* Date+.swift */,
+				FA52A6EC2AA534C0005CF68E /* Layer+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		FAEB00B12AA217250083007E = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +188,7 @@
 		FAEB00D22AA2194E0083007E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FA52A6E92AA5331D005CF68E /* Extension */,
 				FAEB00D32AA219630083007E /* Main */,
 				FAEB00D62AA21D1D0083007E /* Base */,
 			);
@@ -185,6 +201,7 @@
 				FA52A6CF2AA261E8005CF68E /* MainViewModel.swift */,
 				FAEB00C12AA217250083007E /* MainController.swift */,
 				FAEB00D42AA21D180083007E /* MainView.swift */,
+				FA52A6E72AA522BC005CF68E /* LastGameView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -314,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA52A6D02AA261E8005CF68E /* MainViewModel.swift in Sources */,
+				FA52A6E82AA522BC005CF68E /* LastGameView.swift in Sources */,
 				FA52A6D52AA2725E005CF68E /* Observable.swift in Sources */,
 				FAEB00C22AA217250083007E /* MainController.swift in Sources */,
 				FA52A6E42AA4B56D005CF68E /* Team.swift in Sources */,
@@ -321,6 +339,8 @@
 				FAEB00D82AA21D350083007E /* BaseView.swift in Sources */,
 				FA52A6DD2AA4AE90005CF68E /* GameDTO.swift in Sources */,
 				FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */,
+				FA52A6EB2AA53331005CF68E /* Date+.swift in Sources */,
+				FA52A6ED2AA534C0005CF68E /* Layer+.swift in Sources */,
 				FA52A6E22AA4B139005CF68E /* ConferenceType.swift in Sources */,
 				FA52A6E62AA4B6CA005CF68E /* GameRepository.swift in Sources */,
 				FA52A6DF2AA4B078005CF68E /* TeamDTO.swift in Sources */,

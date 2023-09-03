@@ -11,6 +11,7 @@ class MainViewModel: BaseViewModel {
     
     var name: Observable<String> = Observable(value: "test name")
     var gameService: GameServiceProtocol
+    var lastGame: Observable<Game?> = Observable(value: nil)
     
     
     override init() {
@@ -22,9 +23,7 @@ class MainViewModel: BaseViewModel {
         let observable = gameService.getGames()
         
         observable.bind { games in
-            if let firstGame = games.first {
-                self.name.value = firstGame.homeTeam.fullName
-            }
+            self.lastGame.value = games.first
         }
     }
 }

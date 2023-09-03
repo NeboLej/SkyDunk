@@ -14,6 +14,16 @@ final class MainController: BaseController<MainView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        weak var _self = self
+        
+        vm.lastGame.bind { game in
+            if let game = game {
+                DispatchQueue.main.async { 
+                    _self?.mainView.lastGameView.update(game: game)
+                }
+            }
+        }
+        
         vm.name.bind { it in
             DispatchQueue.main.async {
                 print(it)

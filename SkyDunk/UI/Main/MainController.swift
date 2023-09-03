@@ -13,9 +13,6 @@ final class MainController: BaseController<MainView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-//        mainView.nameLab.text = vm.name
         
         vm.name.bind { it in
             DispatchQueue.main.async {
@@ -24,4 +21,3 @@ final class MainController: BaseController<MainView> {
         }
     }
 }
-

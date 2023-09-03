@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct TeamDTO {
+protocol TeamProtocol {
+    var id: Int { get }
+    var name: String { get }
+    var fullName: String { get }
+    var abbreviation: String { get }
+    var city: String { get }
+    var conference: ConferenceType { get }
+    var division: String { get }
+}
+
+struct TeamDTO: TeamProtocol {
     
     let id: Int
     let name: String

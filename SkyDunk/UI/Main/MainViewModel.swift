@@ -10,11 +10,21 @@ import Foundation
 class MainViewModel: BaseViewModel {
     
     var name: Observable<String> = Observable(value: "test name")
+    var gameService: GameServiceProtocol
+    
     
     override init() {
+       
+        let repo = GameRepository()
+        gameService = GameService(online: repo)
         super.init()
-        DispatchQueue.global().asyncAfter(deadline: .now() + 3) { [weak self] in
-            self?.name.value = "oleg"
+
+        let observable = gameService.getGames()
+        
+        observable.bind { games in
+            if let firstGame = games.first {
+                self.name.value = firstGame.homeTeam.fullName
+            }
         }
     }
 }

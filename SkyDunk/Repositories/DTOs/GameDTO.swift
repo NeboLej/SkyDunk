@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct GameDTO {
+protocol GameProtocol {
+    var id: Int { get }
+    var date: Date { get }
+    var homeTeam: TeamDTO { get }
+    var visitorTeam: TeamDTO { get }
+    var homeTeamScore: Int { get }
+    var visitorTeamScore: Int { get }
+    var season: Int { get }
+}
+
+struct GameDTO: GameProtocol {
     
     let id: Int
     let date: Date

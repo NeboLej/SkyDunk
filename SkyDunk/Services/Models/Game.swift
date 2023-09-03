@@ -26,4 +26,16 @@ struct Game {
         self.visitorTeamScore = visitorTeamScore
         self.season = season
     }
+    
+    init(game: GameProtocol) {
+        id = game.id
+        date = game.date
+        homeTeam = Team(team: game.homeTeam)
+        visitorTeam = Team(team: game.visitorTeam)
+        homeTeamScore = game.homeTeamScore
+        visitorTeamScore = game.visitorTeamScore
+        season = game.season
+    }
 }
+
+

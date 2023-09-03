@@ -26,4 +26,14 @@ struct Team {
         self.conference = conference
         self.division = division
     }
+    
+    init(team: TeamProtocol) {
+        id = team.id
+        name = team.name
+        fullName = team.fullName
+        abbreviation = team.abbreviation
+        city = team.city
+        conference = team.conference
+        division = team.division
+    }
 }

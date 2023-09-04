@@ -14,7 +14,7 @@ class LastGameView: UIView {
         let label = UILabel()
         label.text = "КРАЙНЯЯ ИГРА"
         label.font = UIFont(name: "Inter-Light", size: 18)
-        label.textColor = .black
+        label.textColor = UIColor.MyColor.textBlack
         label.textAlignment = .center
         addSubview(label)
         return label
@@ -23,7 +23,7 @@ class LastGameView: UIView {
     lazy var scoreLab: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Inter-Medium", size: 20)
-        label.textColor = .black
+        label.textColor = UIColor.MyColor.textBlack
         label.textAlignment = .center
         addSubview(label)
         return label
@@ -32,7 +32,7 @@ class LastGameView: UIView {
     lazy var dateLab: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Inter-ExtraLight", size: 15)
-        label.textColor = .black
+        label.textColor = UIColor.MyColor.textBlack
         label.textAlignment = .center
         addSubview(label)
         return label
@@ -79,7 +79,7 @@ class LastGameView: UIView {
     }
     
     private func setupView() {
-        backgroundColor = UIColor(named: "BackgroundGray")
+        backgroundColor = UIColor.MyColor.backgroundGray
         layer.cornerRadius = 10
         layer.addShadow()
     }

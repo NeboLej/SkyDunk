@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CFA34AB678B122CA8AAAAA60 /* Pods_SkyDunk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2112891A753BBBCB3A299D6 /* Pods_SkyDunk.framework */; };
+		FA4561C72AA66020004B1CE6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4561C62AA66020004B1CE6 /* Colors.xcassets */; };
 		FA52A6D02AA261E8005CF68E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6CF2AA261E8005CF68E /* MainViewModel.swift */; };
 		FA52A6D22AA2621E005CF68E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6D12AA2621E005CF68E /* BaseViewModel.swift */; };
 		FA52A6D52AA2725E005CF68E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6D42AA2725E005CF68E /* Observable.swift */; };
@@ -24,7 +25,7 @@
 		FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BD2AA217250083007E /* AppDelegate.swift */; };
 		FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BF2AA217250083007E /* SceneDelegate.swift */; };
 		FAEB00C22AA217250083007E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00C12AA217250083007E /* MainController.swift */; };
-		FAEB00C72AA217270083007E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEB00C62AA217270083007E /* Assets.xcassets */; };
+		FAEB00C72AA217270083007E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEB00C62AA217270083007E /* Images.xcassets */; };
 		FAEB00CA2AA217270083007E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB00C82AA217270083007E /* LaunchScreen.storyboard */; };
 		FAEB00D52AA21D180083007E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00D42AA21D180083007E /* MainView.swift */; };
 		FAEB00D82AA21D350083007E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00D72AA21D350083007E /* BaseView.swift */; };
@@ -35,6 +36,7 @@
 		2193E52BBACC19A227CF1357 /* Pods-SkyDunk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyDunk.debug.xcconfig"; path = "Target Support Files/Pods-SkyDunk/Pods-SkyDunk.debug.xcconfig"; sourceTree = "<group>"; };
 		2BF9C6709523B62FA36A8ACB /* Pods-SkyDunk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyDunk.release.xcconfig"; path = "Target Support Files/Pods-SkyDunk/Pods-SkyDunk.release.xcconfig"; sourceTree = "<group>"; };
 		E2112891A753BBBCB3A299D6 /* Pods_SkyDunk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyDunk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4561C62AA66020004B1CE6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FA52A6CF2AA261E8005CF68E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FA52A6D12AA2621E005CF68E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		FA52A6D42AA2725E005CF68E /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		FAEB00BD2AA217250083007E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEB00BF2AA217250083007E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAEB00C12AA217250083007E /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		FAEB00C62AA217270083007E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAEB00C62AA217270083007E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAEB00C92AA217270083007E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAEB00CB2AA217270083007E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAEB00D42AA21D180083007E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,16 @@
 				2BF9C6709523B62FA36A8ACB /* Pods-SkyDunk.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA4561C52AA65FEE004B1CE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB00C62AA217270083007E /* Images.xcassets */,
+				FA4561C62AA66020004B1CE6 /* Colors.xcassets */,
+				FAEB00C82AA217270083007E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FA52A6CC2AA2590B005CF68E /* Services */ = {
@@ -168,8 +180,7 @@
 				FA52A6CC2AA2590B005CF68E /* Services */,
 				FA52A6CD2AA25925005CF68E /* Repositories */,
 				FAEB00D12AA219200083007E /* System */,
-				FAEB00C62AA217270083007E /* Assets.xcassets */,
-				FAEB00C82AA217270083007E /* LaunchScreen.storyboard */,
+				FA4561C52AA65FEE004B1CE6 /* Resources */,
 			);
 			path = SkyDunk;
 			sourceTree = "<group>";
@@ -276,8 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4561C72AA66020004B1CE6 /* Colors.xcassets in Resources */,
 				FAEB00CA2AA217270083007E /* LaunchScreen.storyboard in Resources */,
-				FAEB00C72AA217270083007E /* Assets.xcassets in Resources */,
+				FAEB00C72AA217270083007E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

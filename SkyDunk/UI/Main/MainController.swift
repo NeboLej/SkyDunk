@@ -19,7 +19,7 @@ final class MainController: BaseController<MainView> {
         vm.lastGame.bind { game in
             if let game = game {
                 DispatchQueue.main.async { 
-                    _self?.mainView.lastGameView.update(game: game)
+                    _self?.mainView.lastGameView.bind(vm: game)
                 }
             }
         }

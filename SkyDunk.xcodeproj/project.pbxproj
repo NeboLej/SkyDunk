@@ -23,6 +23,7 @@
 		FA52A6E82AA522BC005CF68E /* LastGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6E72AA522BC005CF68E /* LastGameView.swift */; };
 		FA52A6EB2AA53331005CF68E /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6EA2AA53331005CF68E /* Date+.swift */; };
 		FA52A6ED2AA534C0005CF68E /* Layer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52A6EC2AA534C0005CF68E /* Layer+.swift */; };
+		FA887E0D2AAA06B6006D8CEA /* LastGameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887E0C2AAA06B6006D8CEA /* LastGameVM.swift */; };
 		FAEB00BE2AA217250083007E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BD2AA217250083007E /* AppDelegate.swift */; };
 		FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00BF2AA217250083007E /* SceneDelegate.swift */; };
 		FAEB00C22AA217250083007E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB00C12AA217250083007E /* MainController.swift */; };
@@ -52,6 +53,7 @@
 		FA52A6E72AA522BC005CF68E /* LastGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastGameView.swift; sourceTree = "<group>"; };
 		FA52A6EA2AA53331005CF68E /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		FA52A6EC2AA534C0005CF68E /* Layer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layer+.swift"; sourceTree = "<group>"; };
+		FA887E0C2AAA06B6006D8CEA /* LastGameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastGameVM.swift; sourceTree = "<group>"; };
 		FAEB00BA2AA217250083007E /* SkyDunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyDunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB00BD2AA217250083007E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEB00BF2AA217250083007E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				FAEB00C12AA217250083007E /* MainController.swift */,
 				FAEB00D42AA21D180083007E /* MainView.swift */,
 				FA52A6E72AA522BC005CF68E /* LastGameView.swift */,
+				FA887E0C2AAA06B6006D8CEA /* LastGameVM.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				FA52A6D72AA4AB32005CF68E /* GameService.swift in Sources */,
 				FAEB00DA2AA21D480083007E /* BaseController.swift in Sources */,
 				FAEB00C02AA217250083007E /* SceneDelegate.swift in Sources */,
+				FA887E0D2AAA06B6006D8CEA /* LastGameVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

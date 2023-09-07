@@ -70,12 +70,12 @@ class LastGameView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func update(game: Game) {
+    func bind(vm: LastGameVM) {
         loaderView.isHidden = true
-        homeTeamImage.image = UIImage(named: game.homeTeam.abbreviation)
-        visitorTeamImage.image = UIImage(named: game.visitorTeam.abbreviation)
-        scoreLab.text = "\(game.homeTeamScore) : \(game.visitorTeamScore)"
-        dateLab.text = game.date.toSimpleDate()
+        homeTeamImage.image = UIImage(named: vm.homeTeamLogo)
+        visitorTeamImage.image = UIImage(named: vm.visitorTeamLogo)
+        scoreLab.text = vm.score
+        dateLab.text = vm.date.toSimpleDate()
     }
     
     private func setupView() {

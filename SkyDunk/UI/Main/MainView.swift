@@ -41,5 +41,4 @@ class MainView: BaseView {
             make.height.equalTo(160)
         }
     }
-    
 }

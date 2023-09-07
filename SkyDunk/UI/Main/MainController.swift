@@ -23,12 +23,5 @@ final class MainController: BaseController<MainView> {
                 }
             }
         }
-        
-        vm.name.bind { it in
-            DispatchQueue.main.async {
-                print(it)
-                self.mainView.nameLab.text = it
-            }
-        }
     }
 }

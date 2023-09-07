@@ -70,7 +70,10 @@ class LastGameView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private var vm: LastGameVM?
+    
     func bind(vm: LastGameVM) {
+        self.vm = vm
         loaderView.isHidden = true
         homeTeamImage.image = UIImage(named: vm.homeTeamLogo)
         visitorTeamImage.image = UIImage(named: vm.visitorTeamLogo)
@@ -78,10 +81,15 @@ class LastGameView: UIView {
         dateLab.text = vm.date.toSimpleDate()
     }
     
+    @objc func onClick() {
+        vm?.OnClick()
+    }
+    
     private func setupView() {
         backgroundColor = UIColor.MyColor.backgroundGray
         layer.cornerRadius = 10
         layer.addShadow()
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClick)))
     }
 
     private func initConstraint() {

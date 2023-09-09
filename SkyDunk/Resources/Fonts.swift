@@ -9,7 +9,7 @@ import UIKit
 
 extension UIFont {
     struct MyFont {
-        static let extraLight = "Inter-EtraLight"
+        static let extraLight = "Inter-ExtraLight"
         static let light = "Inter-Light"
         static let medium = "Inter-Medium"
         static let regular = "Inter-Regular"

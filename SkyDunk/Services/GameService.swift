@@ -22,14 +22,7 @@ class GameService: GameServiceProtocol {
     func getGames() -> Observable<[Game]> {
         let games: Observable<[Game]> = Observable(value: [])
         
-//        online.getGames().bind {
-//            games.value = $0.0.map({ game in Game(game: game) })
-//            games.error = $0.1.map({ error in error })
-//        }
-//        online.getGames().bind { reqGames, reqError in
-//            games.value = reqGames.map({ game in Game(game: game) })
-//            games.error = reqError
-//        }
+        
         online.getGames().subscribe { resGames in
             games.value = resGames.map({ game in Game(game: game) })
         } onError: { resError in

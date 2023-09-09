@@ -36,18 +36,4 @@ class Observable<T> {
         listenersNext.append(onNext)
         listenersError.append(onError)
     }
-    
-//    func bind<M>(listener: Observable<M>, map:  @escaping (T) -> M ) {
-//        subscribe { element in
-//            listener.value = map(element)
-//        } onError: { elementError in
-//            listener.error = elementError
-//        }
-//    }
-//
-//    func bind(listener: @escaping (T, Error?)->Void) {
-//        listener(value, error)
-//        listeners.append(listener)
-//    }
-    
 }

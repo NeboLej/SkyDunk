@@ -11,7 +11,7 @@ protocol LastGameListenerProtocol {
     func clickLastGame(id: Int)
 }
 
-class LastGameVM {
+final class LastGameVM {
     
     private let id: Int
     

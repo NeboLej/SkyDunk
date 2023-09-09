@@ -8,21 +8,33 @@
 import UIKit
 import SnapKit
 
-class LastGameView: UIView {
+final class LastGameView: UIView {
     
     lazy var nameLab: UILabel = {
         let label = UILabel()
         label.text = "КРАЙНЯЯ ИГРА"
-        label.font = UIFont(name: "Inter-Light", size: 18)
+        label.font = UIFont(name: UIFont.MyFont.extraLight, size: 18)
         label.textColor = UIColor.MyColor.textBlack
         label.textAlignment = .center
         addSubview(label)
         return label
     }()
     
+    lazy var errorLab: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: UIFont.MyFont.regular, size: 20)
+        label.font = .systemFont(ofSize: 20)
+        label.textColor = UIColor.MyColor.textBlack
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.isHidden = true
+        addSubview(label)
+        return label
+    }()
+    
     lazy var scoreLab: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Inter-Medium", size: 20)
+        label.font = UIFont(name: UIFont.MyFont.medium, size: 20)
         label.textColor = UIColor.MyColor.textBlack
         label.textAlignment = .center
         addSubview(label)
@@ -31,7 +43,7 @@ class LastGameView: UIView {
     
     lazy var dateLab: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Inter-ExtraLight", size: 15)
+        label.font = UIFont(name: UIFont.MyFont.extraLight, size: 15)
         label.textColor = UIColor.MyColor.textBlack
         label.textAlignment = .center
         addSubview(label)
@@ -74,11 +86,26 @@ class LastGameView: UIView {
     
     func bind(vm: LastGameVM) {
         self.vm = vm
-        loaderView.isHidden = true
         homeTeamImage.image = UIImage(named: vm.homeTeamLogo)
         visitorTeamImage.image = UIImage(named: vm.visitorTeamLogo)
         scoreLab.text = vm.score
         dateLab.text = vm.date.toSimpleDate()
+        toggleTeam(isHidden: false)
+    }
+    
+    func showError(error: Error) {
+        vm = nil
+        errorLab.text = error.localizedDescription
+        toggleTeam(isHidden: true)
+    }
+    
+    private func toggleTeam(isHidden: Bool) {
+        homeTeamImage.isHidden = isHidden
+        visitorTeamImage.isHidden = isHidden
+        scoreLab.isHidden = isHidden
+        dateLab.isHidden = isHidden
+        errorLab.isHidden = !isHidden
+        loaderView.isHidden = true
     }
     
     @objc func onClick() {
@@ -106,6 +133,12 @@ class LastGameView: UIView {
         dateLab.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().inset(16)
+        }
+        
+        errorLab.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.trailing.equalToSuperview().inset(16)
+            make.leading.equalToSuperview().offset(16)
         }
         
         homeTeamImage.snp.makeConstraints { make in

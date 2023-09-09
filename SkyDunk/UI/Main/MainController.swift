@@ -14,13 +14,19 @@ final class MainController: BaseController<MainView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        weak var _self = self
-        
-        vm.lastGame.bind { game in
+        subscribeLastGame()
+    }
+    
+    private func subscribeLastGame() {
+        vm.lastGame.subscribe { [weak self] game in
             if let game = game {
-                DispatchQueue.main.async { 
-                    _self?.mainView.lastGameView.bind(vm: game)
+                DispatchQueue.main.async {
+                    self?.mainView.lastGameView.bind(vm: game)
                 }
+            }
+        } onError: { [weak self] error in
+            DispatchQueue.main.async {
+                self?.mainView.lastGameView.showError(error: error)
             }
         }
     }

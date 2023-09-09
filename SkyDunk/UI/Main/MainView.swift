@@ -8,17 +8,7 @@
 import UIKit
 import SnapKit
 
-class MainView: BaseView {
-    
-    lazy var nameLab: UILabel = {
-        var label = UILabel()
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
-        label.textAlignment = .center
-        label.text = "SkyDunk"
-        addSubview(label)
-        return label
-    }()
+final class MainView: BaseView {
     
     lazy var lastGameView: LastGameView = {
         let view = LastGameView()
@@ -30,10 +20,6 @@ class MainView: BaseView {
         super.layoutViews()
         
         backgroundColor = .white
-        
-        nameLab.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-        }
         
         lastGameView.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide).offset(16)

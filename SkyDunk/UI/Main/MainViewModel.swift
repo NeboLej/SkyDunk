@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MainViewModel: BaseViewModel, LastGameListenerProtocol {
+final class MainViewModel: BaseViewModel, LastGameListenerProtocol {
     
     private var gameService: GameServiceProtocol
     var lastGame: Observable<LastGameVM?> = Observable(value: nil)
@@ -15,14 +15,17 @@ class MainViewModel: BaseViewModel, LastGameListenerProtocol {
     override init() {
         let repo = GameRepository()
         gameService = GameService(online: repo)
-        super.init()
-
-        let observable = gameService.getGames()
         
-        observable.bind { games in
-            let lastGame = games.first
-            self.lastGame.value = lastGame != nil ? LastGameVM(game: lastGame!, parent: self) : nil
-        }
+        super.init()
+        weak var _self = self
+
+        gameService.getGames()
+            .subscribe { games in
+                guard let lastGame = games.first else { return }
+                self.lastGame.value = LastGameVM(game: lastGame, parent: _self)
+            } onError: { error in
+                self.lastGame.error = error
+            }
     }
     
     //MARK: - LastGameListenerProtocol

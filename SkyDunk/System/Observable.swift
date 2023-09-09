@@ -11,18 +11,43 @@ class Observable<T> {
     
     var value: T {
         didSet {
-            listeners.forEach { $0(value)}
+            listenersNext.forEach { $0(value) }
         }
     }
     
-    private var listeners: [(T)->Void] = []
+    var error: Error? {
+        didSet {
+            if let  error = error {
+                listenersError.forEach { $0(error) }
+            }
+        }
+    }
+    
+    private var listenersNext: [(T)->Void] = []
+    private var listenersError: [(Error) -> Void] = []
     
     init(value: T) {
         self.value = value
     }
     
-    func bind(listener: @escaping (T)->Void) {
-        listener(value)
-        listeners.append(listener)
+    func subscribe(onNext: @escaping (T)->Void = { _ in }, onError: @escaping (Error)->Void = { _ in }) {
+        onNext(value)
+        if error != nil { onError(error!) }
+        listenersNext.append(onNext)
+        listenersError.append(onError)
     }
+    
+//    func bind<M>(listener: Observable<M>, map:  @escaping (T) -> M ) {
+//        subscribe { element in
+//            listener.value = map(element)
+//        } onError: { elementError in
+//            listener.error = elementError
+//        }
+//    }
+//
+//    func bind(listener: @escaping (T, Error?)->Void) {
+//        listener(value, error)
+//        listeners.append(listener)
+//    }
+    
 }
